@@ -30,6 +30,8 @@ Function setParameters($parameters : Object)
 Function _parse($data : Object) : Object
 	If (Value type:C1509($data.switches)=Is object:K8:27)
 		$data.switches:=cs:C1710.Switches.new($data.switches)
+	Else 
+		$data.switches:=cs:C1710.Switches.new(Null:C1517)
 	End if 
 	
 	If (Value type:C1509($data.macOS.switches)=Is object:K8:27)
