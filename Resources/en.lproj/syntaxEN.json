@@ -1,0 +1,83 @@
+{
+	"_method_": {},
+	"cs.CEFParameters": {
+		"CEFParameters": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
+		"Switches": {
+			"new()": {
+				"Syntax": "**.new**( *data* : Object )",
+				"Params": [
+					[
+						"data",
+						"Object",
+						"->"
+					]
+				],
+				"Summary": ""
+			}
+		}
+	},
+	"CEFParameters": {
+		"setParameters()": {
+			"Syntax": "**.setParameters**( *parameters* : Object )",
+			"Params": [
+				[
+					"parameters",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"getParameters()": {
+			"Syntax": "**.getParameters**() : Object",
+			"Params": [
+				[
+					"",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"getDefaultParameters()": {
+			"Syntax": "**.getDefaultParameters**() : Object",
+			"Params": [
+				[
+					"",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"getFile()": {
+			"Syntax": "**.getFile**() : 4D.File",
+			"Params": [
+				[
+					"",
+					"4D.File",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"getDefaultFile()": {
+			"Syntax": "**.getDefaultFile**() : 4D.File",
+			"Params": [
+				[
+					"",
+					"4D.File",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	},
+	"Switches": {}
+}
