@@ -5,7 +5,7 @@
 ```4d
 var $parameters:=CEFParameters.CEFParameters.me.getParameters()
 
-$parameters.switches["a-valid-key"]:="a valid value"
+$parameters.switches["autoplay-policy"]:="no-user-gesture-required"
 
 CEFParameters.CEFParameters.me.setParameters($parameters)
 ```
