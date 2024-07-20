@@ -23,34 +23,28 @@
 		}
 	},
 	"CEFParameters": {
-		"setParameters()": {
-			"Syntax": "**.setParameters**( *parameters* : Object )",
+		"get()": {
+			"Syntax": "**.get**( *key* : Text ) : Variant",
 			"Params": [
 				[
-					"parameters",
-					"Object",
+					"key",
+					"Text",
 					"->"
-				]
-			],
-			"Summary": ""
-		},
-		"getParameters()": {
-			"Syntax": "**.getParameters**() : Object",
-			"Params": [
+				],
 				[
 					"",
-					"Object",
+					"Variant",
 					"<-"
 				]
 			],
 			"Summary": ""
 		},
-		"getDefaultParameters()": {
-			"Syntax": "**.getDefaultParameters**() : Object",
+		"getDefaultFile()": {
+			"Syntax": "**.getDefaultFile**() : 4D.File",
 			"Params": [
 				[
 					"",
-					"Object",
+					"4D.File",
 					"<-"
 				]
 			],
@@ -67,17 +61,110 @@
 			],
 			"Summary": ""
 		},
-		"getDefaultFile()": {
-			"Syntax": "**.getDefaultFile**() : 4D.File",
+		"set()": {
+			"Syntax": "**.set**( *key* : Text; *value* : Variant )",
+			"Params": [
+				[
+					"key",
+					"Text",
+					"->"
+				],
+				[
+					"value",
+					"Variant",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"getDefaultParameters()": {
+			"Syntax": "**.getDefaultParameters**() : Object",
 			"Params": [
 				[
 					"",
-					"4D.File",
+					"Object",
 					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"getParameters()": {
+			"Syntax": "**.getParameters**() : Object",
+			"Params": [
+				[
+					"",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"setParameters()": {
+			"Syntax": "**.setParameters**( *parameters* : Object )",
+			"Params": [
+				[
+					"parameters",
+					"Object",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"toggle()": {
+			"Syntax": "**.toggle**( *key* : Text )",
+			"Params": [
+				[
+					"key",
+					"Text",
+					"->"
 				]
 			],
 			"Summary": ""
 		}
 	},
-	"Switches": {}
+	"Switches": {
+		"set()": {
+			"Syntax": "**.set**( *key* : Text; *value* : Variant )",
+			"Params": [
+				[
+					"key",
+					"Text",
+					"->"
+				],
+				[
+					"value",
+					"Variant",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"toggle()": {
+			"Syntax": "**.toggle**( *key* : Text )",
+			"Params": [
+				[
+					"key",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"get()": {
+			"Syntax": "**.get**( *key* : Text ) : Variant",
+			"Params": [
+				[
+					"key",
+					"Text",
+					"->"
+				],
+				[
+					"",
+					"Variant",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	}
 }

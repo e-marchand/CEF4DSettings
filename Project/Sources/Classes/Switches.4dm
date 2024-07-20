@@ -19,3 +19,6 @@ Function toggle($key : Text)
 		Else 
 			This:C1470[$key]:=True:C214
 	End case 
+	
+Function get($key : Text) : Variant
+	return This:C1470[$key]

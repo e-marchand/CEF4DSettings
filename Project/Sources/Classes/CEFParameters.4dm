@@ -14,11 +14,11 @@ Function getFile() : 4D:C1709.File
 	
 	
 Function getDefaultParameters : Object
-	return This:C1470._parse(JSON Parse:C1218(This:C1470.getDefaultFile().getText()))
+	return This:C1470._parse(This:C1470.getDefaultFile())
 	
 	
 Function getParameters : Object
-	return This:C1470._parse(JSON Parse:C1218(This:C1470.getFile().getText()))
+	return This:C1470._parse(This:C1470.getFile())
 	
 Function setParameters($parameters : Object)
 	This:C1470._throwIfNotValid($parameters)
@@ -34,10 +34,22 @@ Function toggle($key : Text)
 	$data.switches.toggle($key)
 	This:C1470.setParameters($data)
 	
+Function get($key : Text) : Variant
+	var $data:=This:C1470.getParameters()
+	return $data.switches.get($key)
+	
 	
 	// MARk:- private
 	
-Function _parse($data : Object) : Object
+Function _parse($file : 4D:C1709.File) : Object
+	var $data : Object
+	
+	If (Not:C34($file.exists))
+		$data:={}
+	Else 
+		$data:=JSON Parse:C1218($file.getText())
+	End if 
+	
 	If (Value type:C1509($data.switches)=Is object:K8:27)
 		$data.switches:=cs:C1710.Switches.new($data.switches)
 	Else 
@@ -47,13 +59,13 @@ Function _parse($data : Object) : Object
 	If (Value type:C1509($data.macOS.switches)=Is object:K8:27)
 		$data.macOS.switches:=cs:C1710.Switches.new()
 	Else 
-		$data:={macOS: {switches: cs:C1710.Switches.new(Null:C1517)}}
+		$data.macOS:={switches: cs:C1710.Switches.new(Null:C1517)}
 	End if 
 	
 	If (Value type:C1509($data.windows.switches)=Is object:K8:27)
 		$data.windows.switches:=cs:C1710.Switches.new($data.windows.switches)
 	Else 
-		$data:={windows: {switches: cs:C1710.Switches.new(Null:C1517)}}
+		$data.windows:={switches: cs:C1710.Switches.new(Null:C1517)}
 	End if 
 	
 	// ignore all other things
