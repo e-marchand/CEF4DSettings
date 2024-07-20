@@ -25,4 +25,15 @@ CEFParameters.CEFParameters.me.setParameters($parameters)
 ## Links
 
 - https://developer.4d.com/docs/FormObjects/webAreaOverview/#4dcefparametersjson
-- https://blog.4d.com/custom-parameters-for-initializing-embedded-web-area/
+- hpttps://blog.4d.com/custom-parameters-for-initializing-embedded-web-area/
+
+## PM
+
+
+```json
+{
+  "dependencies": {
+    "github": "e-marchand/CEFParameters"
+  }
+}
+```
