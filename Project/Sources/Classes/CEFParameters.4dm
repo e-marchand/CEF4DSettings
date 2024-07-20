@@ -24,6 +24,16 @@ Function setParameters($parameters : Object)
 	This:C1470._throwIfNotValid($parameters)
 	This:C1470.getFile().setText(JSON Stringify:C1217($parameters; *))
 	
+Function set($key : Text; $value : Variant)
+	var $data:=This:C1470.getParameters()
+	$data.switches.set($key; $value)
+	This:C1470.setParameters($data)
+	
+Function toggle($key : Text)
+	var $data:=This:C1470.getParameters()
+	$data.switches.toggle($key)
+	This:C1470.setParameters($data)
+	
 	
 	// MARk:- private
 	
@@ -35,11 +45,15 @@ Function _parse($data : Object) : Object
 	End if 
 	
 	If (Value type:C1509($data.macOS.switches)=Is object:K8:27)
-		$data.macOS.switches:=cs:C1710.Switches.new($data.macOS.switches)
+		$data.macOS.switches:=cs:C1710.Switches.new()
+	Else 
+		$data:={macOS: {switches: cs:C1710.Switches.new(Null:C1517)}}
 	End if 
 	
 	If (Value type:C1509($data.windows.switches)=Is object:K8:27)
 		$data.windows.switches:=cs:C1710.Switches.new($data.windows.switches)
+	Else 
+		$data:={windows: {switches: cs:C1710.Switches.new(Null:C1517)}}
 	End if 
 	
 	// ignore all other things
