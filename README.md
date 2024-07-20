@@ -16,3 +16,10 @@ $parameters.switches["autoplay-policy"]:="no-user-gesture-required"
 
 CEFParameters.CEFParameters.me.setParameters($parameters)
 ```
+
+> ⚠️ after editing, we need to restart the 4D app
+
+## Links
+
+- https://developer.4d.com/docs/FormObjects/webAreaOverview/#4dcefparametersjson
+- https://blog.4d.com/custom-parameters-for-initializing-embedded-web-area/
