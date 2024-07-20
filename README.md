@@ -1,6 +1,9 @@
 # CEFParameters
 
- edit 4D cef parameters file with code
+[![build](https://github.com/e-marchand/CEFParameters/actions/workflows/build.yml/badge.svg)](https://github.com/e-marchand/CEFParameters/actions/workflows/build.yml)
+[![Release](https://github.com/e-marchand/CEFParameters/actions/workflows/release.yml/badge.svg)](https://github.com/e-marchand/CEFParameters/actions/workflows/release.yml)
+
+ edit 4D CEF parameters file with code
 
 ```4d
 CEFParameters.CEFParameters.me.set("autoplay-policy"; "no-user-gesture-required")
