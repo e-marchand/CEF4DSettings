@@ -27,8 +27,7 @@ CEFParameters.CEFParameters.me.setParameters($parameters)
 - https://developer.4d.com/docs/FormObjects/webAreaOverview/#4dcefparametersjson
 - hpttps://blog.4d.com/custom-parameters-for-initializing-embedded-web-area/
 
-## PM
-
+## Add as project dependencies
 
 ```json
 {
