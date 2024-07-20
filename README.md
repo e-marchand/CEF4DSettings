@@ -3,7 +3,7 @@
  edit 4D cef parameters file with code
 
 ```4d
-CEFParameters.CEFParameters.me.setParameters("autoplay-policy"; "no-user-gesture-required")
+CEFParameters.CEFParameters.me.set("autoplay-policy"; "no-user-gesture-required")
 ```
 
 or for full control
