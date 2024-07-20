@@ -24,4 +24,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     - name: Build
-      uses: 4d/build4d-action@main
+      uses: 4d/build4d-action@main      
+      with:
+        product-line: main
+        version: main
+        build: official
+        token: ${{ secrets.DLTK }}
