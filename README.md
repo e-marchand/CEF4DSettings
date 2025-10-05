@@ -20,7 +20,7 @@ $parameters.switches["autoplay-policy"]:="no-user-gesture-required"
 CEFParameters.CEFParameters.me.setParameters($parameters)
 ```
 
-> ⚠️ after editing, we need to restart the 4D app
+> ⚠️ After editing, you need to restart the 4D app for changes to take effect
 
 ## Links
 

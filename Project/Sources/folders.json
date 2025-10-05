@@ -1,19 +1,11 @@
 {
-	"(Default Classes)": {},
-	"(Default Folder)": {
-		"groups": [
-			"(Default Classes)",
-			"(Default Forms)",
-			"(Default Project Methods)",
-			"(Default Tables)"
+	"Form": {
+		"forms": [
+			"CEFParametersEditor"
+		],
+		"classes": [
+			"CEFParametersEditor"
 		]
 	},
-	"(Default Forms)": {},
-	"(Default Project Methods)": {},
-	"(Default Tables)": {},
-	"trash": {
-		"groups": [
-			"(Default Folder)"
-		]
-	}
+	"trash": {}
 }

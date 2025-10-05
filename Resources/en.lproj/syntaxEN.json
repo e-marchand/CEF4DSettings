@@ -1,6 +1,13 @@
 {
 	"_method_": {},
 	"cs.CEFParameters": {
+		"CEFParametersEditor": {
+			"new()": {
+				"Syntax": "**.new**()",
+				"Params": [],
+				"Summary": ""
+			}
+		},
 		"CEFParameters": {
 			"new()": {
 				"Syntax": "**.new**()",
@@ -22,6 +29,34 @@
 			}
 		}
 	},
+	"CEFParametersEditor": {
+		"addAction()": {
+			"Syntax": "**.addAction**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"saveAction()": {
+			"Syntax": "**.saveAction**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"removeAction()": {
+			"Syntax": "**.removeAction**()",
+			"Params": [],
+			"Summary": ""
+		},
+		"loadParameters()": {
+			"Syntax": "**.loadParameters**() : Object",
+			"Params": [
+				[
+					"",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		}
+	},
 	"CEFParameters": {
 		"get()": {
 			"Syntax": "**.get**( *key* : Text ) : Variant",
@@ -34,28 +69,6 @@
 				[
 					"",
 					"Variant",
-					"<-"
-				]
-			],
-			"Summary": ""
-		},
-		"getDefaultFile()": {
-			"Syntax": "**.getDefaultFile**() : 4D.File",
-			"Params": [
-				[
-					"",
-					"4D.File",
-					"<-"
-				]
-			],
-			"Summary": ""
-		},
-		"getFile()": {
-			"Syntax": "**.getFile**() : 4D.File",
-			"Params": [
-				[
-					"",
-					"4D.File",
 					"<-"
 				]
 			],
@@ -77,8 +90,30 @@
 			],
 			"Summary": ""
 		},
-		"getDefaultParameters()": {
-			"Syntax": "**.getDefaultParameters**() : Object",
+		"toggle()": {
+			"Syntax": "**.toggle**( *key* : Text )",
+			"Params": [
+				[
+					"key",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"getDefaultFile()": {
+			"Syntax": "**.getDefaultFile**() : 4D.File",
+			"Params": [
+				[
+					"",
+					"4D.File",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"getParameters()": {
+			"Syntax": "**.getParameters**() : Object",
 			"Params": [
 				[
 					"",
@@ -88,8 +123,8 @@
 			],
 			"Summary": ""
 		},
-		"getParameters()": {
-			"Syntax": "**.getParameters**() : Object",
+		"getDefaultParameters()": {
+			"Syntax": "**.getDefaultParameters**() : Object",
 			"Params": [
 				[
 					"",
@@ -110,35 +145,19 @@
 			],
 			"Summary": ""
 		},
-		"toggle()": {
-			"Syntax": "**.toggle**( *key* : Text )",
+		"getFile()": {
+			"Syntax": "**.getFile**() : 4D.File",
 			"Params": [
 				[
-					"key",
-					"Text",
-					"->"
+					"",
+					"4D.File",
+					"<-"
 				]
 			],
 			"Summary": ""
 		}
 	},
 	"Switches": {
-		"set()": {
-			"Syntax": "**.set**( *key* : Text; *value* : Variant )",
-			"Params": [
-				[
-					"key",
-					"Text",
-					"->"
-				],
-				[
-					"value",
-					"Variant",
-					"->"
-				]
-			],
-			"Summary": ""
-		},
 		"toggle()": {
 			"Syntax": "**.toggle**( *key* : Text )",
 			"Params": [
@@ -162,6 +181,22 @@
 					"",
 					"Variant",
 					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"set()": {
+			"Syntax": "**.set**( *key* : Text; *value* : Variant )",
+			"Params": [
+				[
+					"key",
+					"Text",
+					"->"
+				],
+				[
+					"value",
+					"Variant",
+					"->"
 				]
 			],
 			"Summary": ""
